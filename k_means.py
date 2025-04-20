@@ -23,7 +23,7 @@ y_kmeans = kmeans.fit_predict(X)
 fig, ax = plt.subplots(figsize=(8, 6))
 ax.scatter(X[:, 0], X[:, 1], c=y_kmeans, cmap='viridis', s=50)
 ax.scatter(kmeans.cluster_centers_[:, 0], kmeans.cluster_centers_[:, 1], 
-           s=300, c='red', marker='X', label='Centroids')
+           s=300, c='red', marker='o', label='Centroids')
 ax.set_title('k-Means Clustering')
 ax.set_xlabel('Feature 1')
 ax.set_ylabel('Feature 2')
